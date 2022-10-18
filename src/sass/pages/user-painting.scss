@@ -1,0 +1,131 @@
+.user-painting {
+  min-height: 100vh;
+  padding: 1rem 0 5rem;
+  background: linear-gradient(
+    180deg,
+    $color-elaine-primary-dark 0%,
+    $color-elaine-primary-light-1 11.17%,
+    $color-elaine-primary 48.67%
+  );
+  &__norabg {
+    background: linear-gradient(
+      180deg,
+      #44019b 0%,
+      rgba(102, 53, 177, 0.99787) 11.17%,
+      rgba(221, 241, 255, 0.990265) 48.67%,
+      rgba(183, 142, 224, 0.98) 100%
+    );
+  }
+
+  &__menu {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+    @media only screen and (max-width: $bp-sm) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__greeting{
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    color: $color-text-light-2;
+  }
+  &__link {
+    align-self: end;
+    display: flex;
+    @media only screen and (max-width: $bp-sm) {
+      margin-right: 0;
+      display: block;
+    }
+    & > * {
+      display: inline-block;
+      text-transform: capitalize;
+      width: max-content;
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__title {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    align-items: baseline;
+    line-height: 5rem;
+    padding-left: 10rem;
+    grid-template-columns: min-content 1fr;
+    row-gap: 0;
+    align-items: end;
+    &__text {
+      font-size: 7rem;
+      font-family: $font-display;
+      color: $color-text-light-2;
+      &-chi {
+        font-family: $font-Chi;
+        font-size: 4rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      line-height: 3rem;
+      padding-left: 5rem;
+      &__text {
+        font-size: 5rem;
+      }
+      padding-right: 5rem;
+    }
+  }
+
+
+  &__img {
+    width: 8rem;
+    transform: rotateY(180deg);
+    margin-right: 3rem;
+    @media only screen and (max-width: $bp-sm) {
+      width: 6rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__reset{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    color: $color-text-light-2;
+    text-shadow: $shadow-text-dark;
+    justify-content: right;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    &>span{
+      margin-right: 1rem;
+    }
+  }
+
+  &__loading {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+    &-text {
+      padding: 1rem;
+      font-size: 2rem;
+      color: $color-elaine-primary-light-1;
+      text-shadow: $shadow-text-dark;
+    }
+  }
+
+  &__searching{
+
+  }
+}

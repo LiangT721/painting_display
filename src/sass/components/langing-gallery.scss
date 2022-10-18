@@ -1,0 +1,380 @@
+.landing-gallery {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    $color-elaine-primary 0,
+    $color-elaine-primary 50%,
+    $color-nora-primary 50%,
+    $color-nora-primary 100%
+  );
+
+  position: relative;
+
+  @media only screen and (max-width: $bp-lg) {
+    height: 100vh;
+    background-image: linear-gradient(
+      155deg,
+      $color-elaine-primary 0,
+      $color-elaine-primary 50%,
+      $color-nora-primary 50%,
+      $color-nora-primary 100%
+    );
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media only screen and (max-width: $bp-lg) {
+    background-image: linear-gradient(
+      165deg,
+      $color-elaine-primary 0,
+      $color-elaine-primary 50%,
+      $color-nora-primary 50%,
+      $color-nora-primary 100%
+    );
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media only screen and (max-width: $bp-sm) {
+    background-image: linear-gradient(
+      165deg,
+      $color-elaine-primary 0,
+      $color-elaine-primary 50%,
+      $color-nora-primary 50%,
+      $color-nora-primary 100%
+    );
+    height: 190vh;
+  }
+
+  &__contents {
+    max-width: $landing-max-width;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  &__elaine,
+  &__nora {
+    height: 100%;
+    width: 100%;
+    max-width: $landing-max-width / 2;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: grid;
+
+    @media only screen and (max-width: $bp-sm) {
+      height: 90vh;
+    }
+  }
+  &__elaine {
+    justify-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    &__intro {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      align-items: center;
+      padding-left: 8rem;
+      justify-items: center;
+    }
+    &__title {
+      font-family: $font-display;
+      text-shadow: $shadow-text-light;
+      align-self: end;
+      font-size: 5rem;
+      transform: rotateZ(2deg);
+    }
+    &__link {
+      position: relative;
+      height: 23rem;
+      width: 15rem;
+      cursor: pointer;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      margin-right: 3rem;
+      & > * {
+        position: absolute;
+      }
+      &-text {
+        color: $color-milk-white;
+        font-size: 1.6rem;
+        top: 0;
+      }
+      &-arrow {
+        width: 2rem;
+        top: 4rem;
+        left: 10%;
+      }
+      &-img {
+        width: 80%;
+        animation: scale 1.5s infinite;
+        bottom: 0;
+        right: 0
+      }
+    }
+    &__text {
+      grid-column: 1 / 2;
+      font-size: 1.8rem;
+      font-weight: 500;
+      transform: rotateZ(-2deg);
+      align-self: start;
+      margin-top: 5rem;
+      max-width: 35rem;
+      color: $color-milk-white;
+      text-shadow: $shadow-text-dark;
+    }
+    &__slider {
+      transform: rotateZ(-2deg);
+      max-width: 640px;
+      width: 36vw;
+      height: 35vh;
+      margin-left: 5%;
+     margin-top: 5vh;
+      z-index: 5;
+    }
+    @media only screen and (max-width: $bp-xxl) {
+      &__intro {
+        padding-left: 5rem;
+      }
+      &__slider {
+        width: 34vw;
+        margin-left: 8%;
+        margin-bottom: 10vh;
+      }
+
+      &__text {
+        width: 80%;
+      }
+      &__link {
+        width: 13rem;
+        height: 20rem;
+        &-text {
+          font-size: 1.4rem;
+          width: 13rem;
+        }
+      }
+    }
+    @media only screen and (max-width: $bp-xl) {
+    &__intro{
+      padding-right: 2rem;
+    }
+    &__text{
+      font-size: 1.5rem;
+    }
+    &__link{
+      width: 11rem;
+      
+    }
+    }
+    @media only screen and (max-width: $bp-lg) {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      grid-template-rows: 1fr;
+      &__intro {
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        grid-template-rows: 2fr 3fr;
+      }
+      &__text {
+        width: 90%;
+        transform: rotateZ(-2deg);
+      }
+      &__slider {
+        height: 28vh;
+        margin-top: 6vh ;
+      }
+    }
+    @media only screen and (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 90vh;
+      &__intro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 5rem;
+      }
+      &__slider {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        height: 33vh;
+        transform: rotateZ(0deg);
+      }
+      &__title{
+        margin-bottom: 5vh;
+      }
+  
+      &__text {
+        grid-column: 1 / 3;
+        margin-top: 3rem;
+      }
+      &__link {
+        width: 12rem;
+        height: 15rem;
+        grid-row: 1 / 2;
+        &-img{
+          width: 8rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  &__nora {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    &__slider {
+      margin-top: 8vh;
+      margin-left: 13%;
+      transform: rotateZ(5deg);
+      width: 35vw;
+      height: 35vh;
+      z-index: 5;
+      max-width: 640px;
+    }
+    &__intro {
+      align-self: end;
+      width: 100%;
+      height: 50vh;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      align-items: center;
+      padding: 10%;
+    }
+    &__title {
+      align-self: start;
+      justify-self: center;
+      font-family: $font-display;
+      font-size: 6rem;
+      text-shadow: $shadow-text-light;
+      grid-column: 2/3;
+      grid-row: 2 / 3;
+    }
+    &__text {
+      width: 100%;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color-elaine-primary-light-1;
+      text-shadow: $shadow-text-dark;
+      transform: rotateZ(-5deg);
+      grid-column: 1/2;
+      grid-row: 1 / 3;
+    }
+    &__link {
+      position: relative;
+      height: 22rem;
+      z-index: 100;
+      cursor: pointer;
+      grid-column: 2/3;
+      grid-row: 1 / 2;
+      & > * {
+        position: absolute;
+      }
+      &-arrow {
+        width: 3rem;
+        top: 3rem;
+        left: 2rem;
+      }
+      &-img {
+        height: 90%;
+        bottom: 0;
+        right: 0;
+        animation: scale 1.5s infinite;
+      }
+      &-text {
+        font-size: 1.6rem;
+        color: $color-milk-white;
+        top: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-xxxl) {
+      // &__intro {
+      //   width: 70%;
+      //   right: 10%;
+      // }
+      // &__title {
+      //   font-size: 5rem;
+      // }
+      // &__text {
+      //   font-size: 1.6rem;
+      // }
+      // &__slider {
+      //   height: 30rem;
+      // }
+    }
+    @media only screen and (max-width: $bp-xxl) {
+      &__link{
+        height: 18rem;
+      }
+    }
+    @media only screen and (max-width: $bp-xl) {
+     &__slider{
+      margin-top: 6vh;
+      height: 32vh;
+      width: 40vw;
+     }
+     &__intro{
+      grid-template-columns: 1fr 1fr;
+     }
+      &__text{
+        font-size: 1.5rem;
+        grid-row: 1 / -1;
+      }
+      &__link{
+        align-self: end;
+        width: 20rem;
+        justify-self:end ;
+      }
+    }
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      width: 100%;
+      max-width: 100%;
+      // align-items: end;
+      &__slider {
+        margin-top: 14vh;
+        transform: rotateZ(-2deg);
+        height: 28vh;
+      }
+    }
+    @media only screen and (max-width: $bp-sm) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      &__slider {
+        width: 90vw;
+        height: 38vh;
+        margin-left: 5vw;
+        transform: rotateZ(0deg);
+        margin-top: 15vh;
+
+      }
+      &__intro{
+        height: 100%;
+      }
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    z-index: 200;
+   
+  }
+
+  &__title-chi{
+    // font-size: 5rem;
+    font-family: $font-Chi;
+  }
+}

@@ -1,0 +1,45 @@
+.form__heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-nora-primary-light-1,
+    $color-nora-primary-light-2
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.form {
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: $color-milk-white;
+
+  box-shadow: $shadow-card;
+  border-radius: 3px;
+
+  display: grid;
+  align-content: start;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  &__bottom__btns {
+    margin: 0 auto;
+    text-align: end;
+    margin-top: 3rem;
+    padding-right: 1rem;
+  }
+}
+
+.login__greeting{
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-milk-white;
+  margin-bottom: 1rem;
+  display: flex;
+}

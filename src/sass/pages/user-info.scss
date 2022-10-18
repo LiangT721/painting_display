@@ -1,0 +1,76 @@
+.user-info {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba($color-nora-primary-light-3, 1),
+    rgba($color-nora-primary-light-2, 1)
+  );
+  min-height: 100vh;
+  padding-top: 10rem;
+  display: grid;
+  justify-items: center;
+
+  &__container {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 60rem;
+    margin-top: 10rem;
+    @media only screen and (max-width: $bp-sm) {
+      width: 80%;
+    }
+  }
+  &__language-toggle {
+    text-align: end;
+    margin-bottom: 2rem;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__greeting {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    color: $color-text-light-2;
+  }
+}
+
+.login {
+  &__form {
+  }
+
+  &__username,
+  &__password {
+    grid-column: 1 / -1;
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+.sign-up__btn {
+  margin-top: 2rem;
+  display: inline-block;
+  text-transform: capitalize;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.bottom__btns {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr repeat(3, max-content);
+  justify-items: start;
+  column-gap: 2rem;
+
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,9 @@
+.language-toggle{
+  &__btn{
+    font-size: 1.4rem;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: $shadow-text-dark;
+  }
+}

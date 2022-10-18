@@ -1,0 +1,60 @@
+///* COLOR SETTING ///
+
+$color-nora-primary: #5600c5;
+$color-nora-primary-light-3: #a35cff;
+$color-nora-primary-light-2: #ba85ff;
+$color-nora-primary-light-1: #d1adff;
+
+$color-elaine-primary: #f392d2;
+$color-elaine-primary-dark: #E935AD;
+$color-elaine-primary-light-1: #fbdaf0;
+
+$color-milk-white: #f5f6f8;
+
+$color-text-light-2: #d4eceb;
+$color-text-placeholder: #798888;
+$color-text-light-1: $color-nora-primary-light-3;
+
+$color-alarm: #ff3535;
+
+///* SHADOW SETTING ///
+$shadow-card: 0 2px 8px rgba(#000000, $alpha: 0.3);
+$shadow-text-light: 1px 1px 2px rgba($color-milk-white, $alpha: 0.8);
+$shadow-text-dark: 1px 1px 2px rgba(black, $alpha: 0.7);
+
+///* FONTFAMILY SETTING ///
+$font-display: "Luckiest Guy", cursive;
+$font-text: "Comfortaa", cursive;
+$font-Chi: 'ZCOOL KuaiLe', cursive;
+
+/// RESPONSIVE BREAKPOINTS
+$bp-xxxl: 100em; //1600px
+$bp-xxl: 87.5em; //1400px
+$bp-xl: 75em; //1200px
+$bp-lg: 62.5em; //1000px
+$bp-md: 50em; // 800px
+$bp-sm: 37.5em; // 600px
+$bp-h-sm: 50em; // 800px
+
+///landing gallery width / 2
+
+$landing-max-width:1600px;
+
+
+@keyframes shake {
+  0% {
+     transform:translateY(-50%) rotateZ(-5deg);
+   }
+ //  25% {
+ //     transform: translateY(-50%) rotateZ(0deg);
+ //   }
+  50% {
+     transform:translateY(-50%) rotateZ(5deg);
+   }
+ //  75% {
+ //     transform:translateY(-50%) rotateZ(0deg);
+ //   }
+  100% {
+     transform:translateY(-50%) rotateZ(-5deg);
+   }
+ }

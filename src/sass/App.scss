@@ -1,0 +1,26 @@
+@import "./base/variable";
+@import "./base/untilites";
+@import "./base/layout";
+
+@import "./shared/popUp";
+@import "./shared/text";
+@import "./shared/input";
+@import "./shared/button";
+@import "./shared/language-toggle";
+@import "./shared/imageUpload";
+
+@import "./components/signUp";
+@import "./components/landing-background.scss";
+@import "./components/langing-gallery.scss";
+@import "./components/painting-list.scss";
+@import "./components/painting-searching-part.scss";
+@import "./components/PaintingSlider.scss";
+@import "./components/landing-slider";
+@import "./components/painting-update";
+
+
+@import "./pages/home";
+@import "./pages/upload";
+@import "./pages/user-info";
+@import "./pages/temp";
+@import "./pages/user-painting.scss";

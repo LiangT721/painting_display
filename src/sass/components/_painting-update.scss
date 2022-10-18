@@ -1,0 +1,17 @@
+.painting-update{
+  position: relative;
+  z-index: 1010;
+  width: 80rem;
+  margin: 0 auto;
+  min-height: 80vh;
+  padding-top: 10vh;
+}
+
+.update__creator{
+  display: flex;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+
+}

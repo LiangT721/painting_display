@@ -1,0 +1,80 @@
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 6rem;
+}
+.mb-lg {
+  margin-bottom: 10rem;
+}
+.mb-hg {
+  margin-bottom: 20rem;
+}
+.ml-sm {
+  margin-left: 1rem;
+}
+.mr-sm {
+  margin-right: 2rem;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.99);
+  }
+
+  50% {
+    transform: scale(1.01);
+    filter: brightness(1.1);
+  }
+  
+  100% {
+    transform: scale(.99);
+  }
+}

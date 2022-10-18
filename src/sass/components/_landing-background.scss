@@ -1,0 +1,233 @@
+.landing-background {
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: $landing-max-width;
+    height: 100%;
+    z-index: 0;
+    @media only screen and (max-width: $bp-sm) {
+      height: 190vh;
+    }
+  }
+  &__logo {
+    width: 18%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(-3deg);
+
+    @media only screen and (max-width: $bp-xxxl) {
+      width: 23%;
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+      width: 30%;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      width: 50%;
+    }
+  }
+
+  width: 5rem;
+  fill: $color-milk-white;
+  position: absolute;
+  &-photo {
+    width: 8rem;
+    fill: $color-elaine-primary-light-1;
+    top: 10%;
+    left: 48%;
+    filter: drop-shadow($shadow-text-dark);
+    // transform: rotateZ(-15deg);
+    animation: shake 1.5s infinite;
+    cursor: pointer;
+    z-index: 100;
+  }
+  // &-bird {
+  //   width: 5rem;
+  //   fill: $color-elaine-primary-dark;
+  //   bottom: 20%;
+  //   left: 42%;
+  //   transform: rotateZ(-5deg);
+  // }
+  &-music {
+    fill: $color-elaine-primary-light-1;
+    bottom: 5%;
+    left: 40%;
+    transform: rotateZ(5deg);
+  }
+  &-lollipop {
+    width: 4rem;
+    fill: $color-elaine-primary-light-1;
+    bottom: 40%;
+    left: 5%;
+  }
+  &-pencil {
+    width: 4rem;
+    fill: $color-elaine-primary-light-1;
+    top: 55%;
+    left: 43%;
+    transform: rotateZ(180deg);
+  }
+  &-headphone {
+    width: 6rem;
+    fill: $color-milk-white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%) rotateZ(20deg);
+  }
+  &-gift {
+    fill: $color-nora-primary-light-2;
+    top: 0;
+    right: 2%;
+    transform: rotateZ(-10deg);
+  }
+  &-cassette {
+    width: 6rem;
+    fill: $color-nora-primary-light-2;
+    top: 40%;
+    right: 3%;
+    transform: rotateZ(10deg);
+  }
+  &-planet {
+    display: none;
+    width: 6rem;
+    height: 6rem;
+    fill: $color-nora-primary-light-3;
+    top: 46%;
+    left: 60%;
+    transform: rotateZ(-10deg);
+    z-index: 10;
+  }
+  &-pen {
+    width: 4rem;
+    fill: $color-nora-primary-light-3;
+    top: 33%;
+    left: 51%;
+    transform: rotateZ(-10deg);
+  }
+  &-film {
+    width: 6rem;
+    fill: $color-nora-primary-light-1;
+    top: 55%;
+    right: 20%;
+    transform: rotateZ(-10deg);
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-lg) {
+    &-snowflake {
+      left: 5%;
+    }
+    &-photo {
+      width: 5rem;
+      left: 10%;
+      top: 55%;
+    }
+    &-music {
+      top: 1%;
+      left: 85%;
+      display: none;
+    }
+    &-lollipop {
+      top: 1%;
+      width: 6rem;
+      height: 5rem;
+      left: 30%;
+    }
+    &-pencil {
+      top: 30%;
+      left: 30%;
+    }
+    &-headphone {
+      top: 40%;
+      left: 90%;
+    }
+    &-gift {
+      top: 90%;
+      right: 20%;
+      height: 5rem;
+    }
+    &-cassette {
+      width: 4rem;
+      top: 55%;
+      right: 30%;
+      display: none;
+    }
+    &-planet {
+      top: 40%;
+      left: 65%;
+    }
+    &-pen {
+      top: 49%;
+      left: 50%;
+    }
+    &-film {
+      top: 85%;
+      right: 83%;
+      height: 4rem;
+      display: none;
+    }
+  }
+  @media only screen and (max-width: $bp-sm) {
+    // width: auto;
+    height: 4rem;
+    &-snowflake {
+      top: 2%;
+      left: 10%;
+    }
+    &-photo {
+      width: 5rem;
+      left: 8%;
+      top: 45%;
+    }
+
+    &-bird {
+      top: 22%;
+      left: 42%;
+    }
+    &-lollipop {
+      top: 8%;
+      width: 4rem;
+      left: 30%;
+      display: none;
+    }
+    &-pencil {
+      display: none;
+      top: 51%;
+      left: 35%;
+    }
+
+    &-pen {
+      display: none;
+
+      top: 45%;
+      left: 40%;
+    }
+    &-headphone {
+      height: 5rem;
+      top: 45%;
+      left: 90%;
+    }
+    &-gift {
+      height: 6rem;
+      top: 95%;
+      right: 15%;
+    }
+    &-cassette {
+      top: 70%;
+      right: 75%;
+    }
+    &-planet {
+      height: 5rem;
+      top: 55%;
+      right: 15%;
+    }
+    &-film {
+      top: 94%;
+      left: 10%;
+    }
+  }
+}
